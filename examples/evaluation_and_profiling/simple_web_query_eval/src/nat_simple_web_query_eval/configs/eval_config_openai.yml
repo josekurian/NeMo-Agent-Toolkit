@@ -33,15 +33,15 @@ functions:
 llms:
   openai_llm:
     _type: openai
-    model_name: gpt-4o-mini
+    model_name: gpt-5.6-luna
     temperature: 0.0
   openai_rag_eval_llm:
     _type: openai
-    model_name: gpt-4o-mini
+    model_name: gpt-5.6-luna
     max_tokens: 8
   openai_trajectory_eval_llm:
     _type: openai
-    model_name: gpt-4o-mini
+    model_name: gpt-5.6-luna
     temperature: 0.0
     max_tokens: 1024
 
@@ -60,7 +60,7 @@ workflow:
 eval:
   general:
     max_concurrency: 1
-    workflow_alias: nat-simple-gpt-4o-mini
+    workflow_alias: nat-simple-gpt-5.6-luna
     output:
       dir: ./.tmp/nat/examples/evaluation_and_profiling/simple_web_query_eval/openai/
       cleanup: true

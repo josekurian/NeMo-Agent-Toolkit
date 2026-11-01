@@ -43,7 +43,7 @@ llms:
     max_tokens: 250
   openai_llm:
     _type: openai
-    model_name: gpt-4o
+    model_name: gpt-5.6-terra
     temperature: 0.0
   qwq_32b:
     _type: nim
